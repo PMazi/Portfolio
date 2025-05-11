@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>CV - Paweł Mazurkiewicz</title>
+    <link rel="stylesheet" type="text/css" href="style.css" title="Arkusz stylów CSS">
+</head>
+<body>
+    <header>
+            <button class="GitHub_button" onclick="window.location.href='https://github.com/PMazi'"  target="_blank">
+                <img class="GitHub_logo" src="images/GitHub_logo.png" alt="ikona GitHub">
+                GitHub
+            </button>
+            <button class="CV_button" onclick=""  target="_blank">
+                Pobierz moje CV
+            </button>
+        <nav> <a href="#About_me">O MNIE</a> <a href="#Projects">MOJE PROJEKTY</a> <a href="#Contact">KONTAKT</a> </nav>
+    </header>
+    <section class="Links">
+        
+    </section>
+    <section class="About_me" id="About_me">
+        <div class="text">
+            <h1>Cześć, jestem <span class="niebieski">Paweł</span><br>
+            student <span class="czerwony">III roku Informatyki</span><br>
+            na Politechnice Poznańskiej</h1>
+            
+            <p>Mam <span class="niebieski">22 lata</span> oraz pochodzę z Bydgoszczy.       
+            Moją przygodę z informatyką zacząłem już w gimnazjum,
+            gdzie wybrałem klasę o profilu matematyczno-informatycznym.
+            Jestem absolwentem <span class="czerwony">Technikum Zespołu Szkół Elektronicznych</span> w Bydgoszczy
+            oraz studentem III roku Informatyki na Politechnice Poznańskiej.
+            Moje zainteresowania poza informatyką to siłownia, piłka nożna oraz gry komputerowe.</p>
+        </div>
+        <div class="my_image">
+            <img src="images/Cv2.jpg">
+        </div>
+    </section>
+
+    <section class="Projects" id="Projects">
+        <h1>Moje projekty</h1>
+        <div class="horizontal_line"></div>
+
+        <div class="Data_base">
+            <h1>Baza danych oraz aplikacja do zarządzania</h1>
+            <p>Kod tworzący bazę danych został napisany w języku SQL oraz składa się między innymi z 10 encji oraz 17 triggerów.
+                Zarządzanie bazą odbywa się za pomocą aplikacji stworzonej 
+                w Oracle APEX. Umożliwia ona przeglądanie wszystkich tabel oraz utworzonych na podstawie nich wykresów. 
+                Aplikacja pozwala także na dodawanie, usuwanie i edytowanie danych.
+            </p>
+            <img src="Bazy_danych/Data_base_GUI_1.png" alt="Interfejs aplikacji bazy danych">
+            <img src="Bazy_danych/Data_base_GUI_2.png" alt="Interfejs aplikacji bazy danych">
+            <button class="GitHub_button" onclick="window.location.href='https://github.com/PMazi/Systemy-Baz-Danych/blob/main/apex_ddl.sql'"  target="_blank">
+                <img class="GitHub_logo" src="images/GitHub_logo.png" alt="ikona GitHub">
+                Kod źródłowy
+            </button>
+        </div>
+        <div class="horizontal_line"></div>
+        <div class="Computer_graphics">
+            <h1>Grafika komputerowa - silnik</h1>
+            <div class="row">
+                <div class="column">
+                    <p>Projekt został wykonany w języku C++ z wykorzystaniem biblioteki OpenGL do 
+                        tworzenia grafiki i animacji. Poszczególne części silnika były wgrywane 
+                        do projektu z programu Blender oraz następnie animowane.
+                        Cały projekt składa się z 26 poruszających się elementów połączonych w silnik.  
+                    </p>
+                    <button class="GitHub_button" onclick="window.location.href='https://github.com/PMazi/Grafika-komputerowa'" target="_blank">
+                        <img class="GitHub_logo" src="images/GitHub_logo.png" alt="ikona GitHub">
+                        Link do projektu
+                    </button>
+                </div>
+                <iframe src="https://youtube.com/embed/3X1MlzDfGtQ" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+        </div>
+        <div class="horizontal_line"></div>
+        <div class="Mobile_application2">
+            <h1>Aplikacja do znajdowania promocji</h1>
+            <p> Aplikacja na telefony z systemem Android, napisana w języku Kotlin z wykorzystaniem 
+                frameworka Jetpack Compose, nawiązuje połączenie z Mapami Google za pomocą API. 
+                Po kliknięciu przycisku lupy aplikacja określa lokalizację użytkownika za pomocą GPS i 
+                wyszukuje pobliskie sklepy spożywcze. Następnie web crawler odnajduje gazetki promocyjne 
+                wyszukanych sklepów, które można przeglądać bezpośrednio w aplikacji.
+             </p>
+            <div class="row">
+                <img src="Aplikacja Promocje/Promocje1.jpg">
+                <img src="Aplikacja Promocje/Promocje3.jpg">
+                <img src="Aplikacja Promocje/Promocje2.jpg">
+            </div>    
+            <button class="GitHub_button" onclick="window.location.href='https://github.com/PMazi/Lowca_Promocji/blob/main/MainActivity.kt'"  target="_blank">
+                <img class="GitHub_logo" src="images/GitHub_logo.png" alt="ikona GitHub">
+                Kod źródłowy
+            </button>        
+        </div>
+        <div class="horizontal_line"></div>
+        <div class="Computer_networks">
+            <h1>Gra sieciowa "Gomoku"</h1>
+            <div class="row">
+                <div class="column">
+                    <p> Gra Gomoku została napisana w języku C i opiera się na architekturze klient-serwer. 
+                        Komunikacja między graczem a serwerem odbywa się przy użyciu protokołu TCP 
+                        z wykorzystaniem interfejsu Berkeley sockets (POSIX).
+                         Do obsługi wielu graczy jednocześnie zastosowano programowanie współbieżne, 
+                         wykorzystując wątki (pthread). Logika gry znajduje się po stronie serwera, 
+                         który analizuje stan planszy i rozsyła dane do klientów w postaci tekstowej, 
+                         np. współrzędnych wykonanych ruchów. </p>
+                    <img class="Gomoku_game" src="Sieci komputerowe/gomoku.png" alt="gra gomoku">
+                    <button class="GitHub_button" onclick="window.location.href='https://github.com/PMazi/Projekt-SK2'"  target="_blank">
+                        <img class="GitHub_logo" src="images/GitHub_logo.png" alt="ikona GitHub">
+                        Link do projektu
+                    </button>
+                </div>
+                <img class="code_fragment" src="Sieci komputerowe/validate_move.png" alt="fragment kodu">
+            </div>   
+        </div>
+        <div class="horizontal_line"></div>
+        <div class="Line_follower">
+            <h1>Robot podążający za linią</h1>
+            <p>Proces tworzenia robota obejmował klika etapów. Pierwszym z nich było zaprojektowanie 
+                płytki PCB, którą następnie trzeba było wytrawić. Gdy płytka była gotowa należało 
+                wywiercić w niej otwory na poszczególne elementy, które trzeba umocować na płytce, 
+                między innymi mikrokontroler, rezonator kwarcowy, czujniki odbiciowe, 
+                stabilizator napięcia, rezystory, diody i kondensatory. Następnie ze znalezionych 
+                w domu klocków LEGO stworzyłem pojazd, na którym umocowana została płytka.
+                Ostatnim etapem było napisanie programu, dzięki któremu robot będzie poruszał się po linii.
+             </p>
+            <div class="row">
+                <iframe src ="https://www.youtube.com/embed/VWxoK8ZsP6Y" 
+                    frameborder="0" 
+                    allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" 
+                    allowfullscreen
+                ></iframe>
+                <img src="Line Follower/przód_pojazdu.jpg">
+                <img src="Line Follower/płytka.jpg">
+            </div>    
+            <button class="GitHub_button" onclick="window.location.href='https://github.com/PMazi/Line-Follower/blob/main/line_follower.c'"  target="_blank">
+                <img class="GitHub_logo" src="images/GitHub_logo.png" alt="ikona GitHub">
+                Kod źródłowy
+            </button>        
+        </div>
+        <div class="horizontal_line"></div>
+        <div class="Mobile_application">
+            <h1>Aplikacja mobilna do koktajli</h1>
+            <div class="row">
+                <div class="column">
+                    <p>Aplikacja została napisana w języku Kotlin przy użyciu 
+                        Android Studio i korzysta z frameworku Jetpack Compose.
+                        Udostępnia listę koktajli oraz po wybraniu jednego z nich
+                        wyświetla potrzebne składniki oraz sposób przygotowania.
+                        Dodatkowo aplikacja ma zaimplementowany czasomierz z funkcjami start, stop i reset. 
+                        Umożliwia też wysłanie składników napoju za pomocą wiadomości SMS. 
+                    </p>
+                    <button class="GitHub_button" onclick="window.location.href='https://github.com/PMazi/Mobile-Applications/blob/master/koktajle/app/src/main/java/com/example/koktajle/MainActivity.kt'"  target="_blank">
+                        <img class="GitHub_logo" src="images/GitHub_logo.png" alt="ikona GitHub">
+                        Kod źródłowy
+                    </button>
+                </div>
+                <img src="Aplikacja mobila/koktajle1.jpg">
+                <img src="Aplikacja mobila/koktajle2.jpg">
+            </div>
+        </div>
+        <div class="horizontal_line"></div>
+        <div class="Voice-based_gender_detection">
+            <h1>Program do wykrywania płci na podstawie mowy</h1>
+            Kod jest napisany w języku Python z wykorzystaniem Jupyter Notebook. Wykrywanie mowy zrealizowane zostało za pomocą algorytmu 
+            Harmonic Product Spectrum, który służy do detekcji 
+            częstotliwości dzwięku. Program został przetestowany
+            na 91 nagraniach audio, a jego skuteczność wynosi 91.2%.
+            <img src="KCK/Rozpoznawanie_płci.png">
+            <button class="GitHub_button" onclick="window.location.href='https://github.com/PMazi/KCK/blob/main/rozpoznawanie_plci.ipynb'"  target="_blank">
+                <img class="GitHub_logo" src="images/GitHub_logo.png" alt="ikona GitHub">
+                Kod źródłowy
+            </button>
+        </div>
+        <div class="horizontal_line"></div>
+        <div class="Tomograph">
+            <h1> Program symulujący działanie tomografu</h1>
+            Program został napisany w języku Python przy użyciu Jupyter Notebook. 
+            Jego działanie polega na wczytaniu pliku w formacie DICOM, a następnie 
+            na podstawie obrazu źródłowego generowany jest sinogram poprzez prześwietlenia obrazu 
+            pod różnymi kątami za pomocą emiterów i detektorów. Istnieje również możliwość 
+            opcjonalnego zastosowania filtra. Ostatnim etapem działania programu jest rekonstrukcja obrazu 
+            z sinogramu metodą filtrowanej projekcji wstecznej.
+            <div class="row">
+                <img class="input" src="Tomograf/results.png">
+            </div>
+            <button class="GitHub_button" onclick="window.location.href='https://github.com/PMazi/Tomograf/blob/main/tomograf.ipynb'"  target="_blank">
+                <img class="GitHub_logo" src="images/GitHub_logo.png" alt="ikona GitHub">
+                Kod źródłowy
+            </button>
+        </div>
+        <div class="horizontal_line"></div>
+        <div class="Object_programming">
+            <h1>Programowanie obietkowe w C++ - projekt firmy</h1>
+            <p> W projekcie wykorzystane są podstawowe elementy programowania obiektowego 
+                między innymi dziedziczenie, polimorfizm, enkapsulacja oraz 
+                klasy abstrakcyjne. Program to prosta symulacja firmy i polega 
+                na dodawaniu do firmy nowych pracowników. Pracownicy pełnią 
+                różne funkcje, na przykład ustalanie wynagrodzenia w firmie 
+                lub edytowanie danych pracowników, a menedżer firmy decyduje kogo zatrudnić oraz kogo zwolnić.
+            </p>
+            <button class="GitHub_button" onclick="window.location.href='https://github.com/PMazi/Object-Oriented-Programming/tree/main/OOP_project'"  target="_blank">
+                <img class="GitHub_logo" src="images/GitHub_logo.png" alt="ikona GitHub">
+                Link do projektu
+            </button> 
+        </div>
+        <div class="horizontal_line"></div>
+    </section>
+
+    <section class="Other_skills">
+        <h1> Umiejętności:</h1>
+        <ul>
+            <li>Posiadam prawo jazdy katagorii B</li>
+            <li>Znajomość języka Python oraz środowiska Jupyter Notebook, potrafie tworzyć wykresy w pythonie
+            </ul>
+                <img class="chart" src="images/wykres.png">
+            <ul>
+            <li>Znajomość języka Kotlin do tworzenia aplikacji w Android Studio</li>
+            <li>Znajomość jezyka C/C++</li>
+            <li>Tworzenie stron internetowych z wykorzystaniem HTML i CSS, PHP, javaScript i jQuery</li>
+            <li>Tworzenie baz danych w języku SQL oraz tworzenie do nich aplikacji w Oracle APEX</li>
+            <li>Umiem posługiwać się programem Excel</li>
+            <li>Potrafię pisać proste programy w języku deklaratywnym PDDL, na przykład problem wieży hanoi</li>
+            <li>Znajomość języka R i programu R studio, który służy do analizy danych</li>
+            <li>Posiadam znajomość metod wielokryterialnego wspomagania decyzji, takich jak UTA, ELECTRE I, ELECTRE Tri oraz ACCESS</li>
+            <li>Mam doświadczenie w konfigurowaniu routerów i switchy, między innymi w tworzeniu sieci oraz VLANów. Mam również doświadczenie w implementacji routingu statycznego i dynamicznego z wykorzystaniem protokołów takich jak RIP i OSPF.</li>
+            <li>Znajomość programu LateX do tworzenia dokumentów tekstowych</li>
+        </ul>
+    </section>
+    <div class="horizontal_line"></div>
+    <section class="Contact" id="Contact">
+        <h1>
+            Kontakt
+        </h1>
+        <ul>
+            <li>Email: pawmaz02@gmail.com</li>
+        </ul>
+    </section>
+
+</body>
+</html>

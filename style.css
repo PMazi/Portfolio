@@ -1,0 +1,436 @@
+@font-face { 
+    font-family: 'Hind_Siliguri';
+    src: url('Hind_Siliguri/HindSiliguri-Bold.ttf');
+    font-weight: normal;
+    font-style: normal;
+}
+
+* {
+    font-family: 'Hind_Siliguri';
+}
+
+.niebieski {
+    color: rgb(60, 90, 255);
+}
+
+.czerwony {
+    color: rgb(255, 47, 47);
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+header {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: center;
+    position:fixed;
+    column-gap: 1.5%;
+    z-index: 1000;
+}
+
+header button {
+    height: auto;
+    padding: 1%;
+    border: solid;
+    border-width: 1.5px;
+    border-radius: 15px;
+    gap: 20px;
+
+    /*do przezroczystego tła*/
+    background: rgba(255, 255, 255, 0.30);
+    backdrop-filter: blur(8px);
+}
+
+
+header button img {
+    width: 50px;
+    height: auto;
+}
+
+
+nav {
+    display: flex;
+    width: fit-content;
+    padding: 1%;
+    border: solid;
+    border-width: 1.5px;
+    border-radius: 15px;
+    gap: 20px;
+
+    /*do przezroczystego tła*/
+    background: rgba(255, 255, 255, 0.30);
+    backdrop-filter: blur(8px);
+}
+
+nav a {
+    text-decoration: none;
+    font-size: 1.1em;
+    color: rgb(30, 40, 255);
+    
+    
+}
+
+nav a:hover {
+    color:rgb(255, 47, 47);
+}
+
+
+section.About_me {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+    padding-top: 6%;
+}
+
+section.About_me .text  {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    width: 45%;
+    font-size: 1.25em;
+    padding-left: 5%;
+}
+
+section.About_me .text h1 {
+    margin-top: 0;
+}
+
+section.About_me .my_image {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    width: 50%;
+    justify-content: center;
+    align-items: center;
+}
+
+section.About_me .my_image img {
+    width: 70%;
+    height: auto;
+    border-radius: 10px;
+}
+
+button:hover {
+    transform: scale(1.1);
+}
+
+section.Projects button.GitHub_button img.GitHub_logo {
+    width: 50px;
+    height: auto;
+}
+
+section.Projects {
+    display: flex;
+    flex-direction: column;
+    row-gap: 15px;
+    font-size:large;
+    text-align: center;
+}
+
+section.Projects img{
+    transition: transform 0.3s ease;
+}
+
+section.Projects img:hover{
+    transform: scale(1.04);
+}
+
+div.horizontal_line {
+    width: 80%;
+    border-top: 2px solid black; 
+    margin: auto; 
+}
+
+div.Data_base {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 15px;
+    width: 80%;
+    align-self: center;
+    text-align: start;
+}
+
+body section.Projects div.Data_base img{
+    width: 90%;
+    height: auto;
+    border-radius: 10px;
+}
+
+body section.Projects div.Computer_graphics{ 
+    display: flex;
+    flex-direction: column;
+    padding-left: 8%;
+    padding-right: 8%;
+    text-align: start;
+}
+
+body section.Projects div.Computer_graphics div.row{
+    display: flex;
+    flex-direction: row;
+    column-gap: 5%;
+    align-items: center;
+}
+
+body section.Projects div.Computer_graphics div.row div.column {
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-self: flex-start;
+}
+
+body section.Projects div.row iframe{
+    width: 60%;
+    aspect-ratio: 16 / 9;
+    border-radius: 15px;  
+}
+
+button {
+    display: flex;
+    background-color: rgb(77, 112, 255);
+    border-radius: 30px;
+    border: none;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    font-size: 1em;
+
+    /* do powiększenia obrazka po najechaniu*/
+    transition: transform 0.3s ease;
+}
+
+section.Projects button.GitHub_button img.GitHub_logo {
+    width: 50px;
+    height: auto;
+}
+
+div.Mobile_application2 {
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    text-align: start;
+    align-self: center;
+    row-gap: 10px;
+}
+
+
+div.Mobile_application2 h1 {
+    text-align: center;
+}
+
+div.Mobile_application2 > button {
+    align-self: center;
+}
+
+div.Mobile_application2 div.row {
+    display: flex;
+    flex-direction: row;
+    column-gap: 1%;
+    justify-content: center;
+}
+
+
+div.Mobile_application2 div.row img {
+    width: 25%;
+    aspect-ratio: 1080/2340;
+    border-radius: 15px;
+}
+
+div.Computer_networks {
+    display: flex;
+    flex-direction: column;
+    width: 85%;
+    align-self: center;
+    row-gap: 15px;
+    text-align: start;
+}
+
+div.Computer_networks div.row {
+    display: flex;
+    flex-direction: row;
+    column-gap: 4%;
+}
+
+div.Computer_networks div.row div.column {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 15px;
+    justify-content: space-between;
+}
+
+div.Computer_networks div.row img.code_fragment {
+    width: 50%;
+    height: auto;
+    border-radius: 10px;
+    align-self:center;
+}
+
+div.Computer_networks img.Gomoku_game {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+div.Line_follower {
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    text-align: start;
+    align-self: center;
+    row-gap: 10px;
+}
+
+
+div.Line_follower h1 {
+    text-align: center;
+}
+
+div.Line_follower > button {
+    align-self: center;
+}
+
+div.Line_follower div.row {
+    display: flex;
+    flex-direction: row;
+    column-gap: 1%;
+}
+
+div.Line_follower iframe {
+    width: 32%;
+    aspect-ratio: 1000/1220;
+    border-radius: 15px;
+}
+
+div.Line_follower div.row img {
+    width: 32%;
+    aspect-ratio: 3000/4000;
+    border-radius: 15px;
+}
+
+div.Mobile_application {
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    margin: 0 auto;
+}
+
+div.Mobile_application div.row {
+    display: flex;
+    flex-direction: row;
+    column-gap: 2%;
+}
+
+div.Mobile_application div.row div.column {
+    display: flex;
+    flex-direction: column;
+    width: 52%;
+    text-align: start;
+    align-items: center;
+}
+
+
+div.Mobile_application div.row > img{
+    width: 24%;
+    aspect-ratio: 1080/2340;
+    border-radius: 15px;
+    align-self: center;
+}
+
+div.Voice-based_gender_detection {
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    margin: 0 auto;
+    align-items: center;
+    row-gap: 10px;
+}
+
+div.Voice-based_gender_detection img {
+    display: flex;
+    width: 70%;
+    margin: 0 auto;
+    border-radius: 10px;
+}
+
+div.Tomograph {
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    margin: 0 auto;
+    row-gap: 12px;
+}
+
+div.Tomograph div.row {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+div.Tomograph div.row img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+div.Tomograph button {
+    align-self: center;
+}
+
+div.Object_programming {
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    margin: 0 auto;
+    align-items: center;
+}
+
+section.Other_skills img{
+    transition: transform 0.3s ease;
+}
+
+section.Other_skills img:hover{
+    transform: scale(1.04);
+}
+
+section.Other_skills {
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    margin: 0 auto;
+    font-size: large;
+}
+
+section.Other_skills h1 {
+    display: flex;
+    align-self: center;
+}
+
+section.Other_skills img.chart {
+    width: 75%;
+    height: auto;
+}
+
+section.Other_skills ul li {
+    text-align: start;
+}
+
+section.Contact {
+    display: flex;
+    flex-direction: column;
+}
+
+section.Contact h1{
+    display: flex;
+    justify-content: center;
+}
+
+section.Contact ul{
+    display: flex;
+    justify-content: center;
+}
